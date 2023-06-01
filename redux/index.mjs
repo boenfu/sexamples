@@ -33,3 +33,5 @@ const store2 = createStore(
 store2.subscribe(() => console.log(store2.getState()));
 
 store2.dispatch({ type: "counter/incremented" });
+
+// createStore = (reducer, state) => ({ dispatch: action => state = reducer(state, action) });
